@@ -8,7 +8,6 @@ import feedbackRouter from "./routes/feedbackRoutes.routes.js";
 dotenv.config({ path: "./.env" });
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors());
@@ -17,9 +16,11 @@ app.use(express.json());
 // MongoDB connection
 connectToMyDatabase();
 
-// Routes
-app.use("/api/v1/feedback", feedbackRouter);
+if (process.env.NODE_ENV !== "production") {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+  });
+}
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+export default app;

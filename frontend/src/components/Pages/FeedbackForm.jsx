@@ -16,7 +16,7 @@ function FeedbackForm() {
     e.preventDefault();
     setSubmitted(false);
     try {
-      await axios.post("http://localhost:5000/api/v1/feedback", form);
+      await axios.post("/api/v1/feedback", form);
       setForm({ name: "", email: "", text: "", category: "Suggestion" });
       setSubmitted(true);
     } catch (error) {

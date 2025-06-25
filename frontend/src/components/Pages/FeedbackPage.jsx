@@ -8,7 +8,7 @@ function FeedbackPage() {
   const [sort, setSort] = useState("");
 
   useEffect(() => {
-    let url = "http://localhost:5000/api/v1/feedback?";
+    let url = "/api/v1/feedback?";
     if (category) url += `category=${category}&`;
     if (sort) url += `sort=${sort}`;
     axios.get(url).then((res) => setFeedbacks(res.data));
