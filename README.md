@@ -12,6 +12,7 @@
     - [🎨 Frontend](#-frontend)
   - [Screenshots](#screenshots)
     - [🏠 Home Page](#-home-page)
+    - [About Page](#about-page)
     - [📝 Feedback Form](#-feedback-form)
     - [📊 Feedback Dashboard](#-feedback-dashboard)
   - [Installation and Setup](#installation-and-setup)
@@ -100,13 +101,17 @@ frontend/
 
 ![Home Screenshot](./screenshots/home.png)
 
+### About Page
+
+![About Screenshot](./screenshots/About.png)
+
 ### 📝 Feedback Form
 
-![Form Screenshot](./screenshots/feedback-form.png)
+![Form Screenshot](./screenshots/FeedbackForm.png)
 
 ### 📊 Feedback Dashboard
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+![Dashboard Screenshot](./screenshots/FeedbackPage.png)
 
 ---
 
@@ -192,4 +197,3 @@ MONGODB_URI=<your_complete_mongodb_uri>
 This project is licensed for academic or assessment use. For commercial inquiries, contact the author.
 
 ---
-# liaplus-backend-assignment
